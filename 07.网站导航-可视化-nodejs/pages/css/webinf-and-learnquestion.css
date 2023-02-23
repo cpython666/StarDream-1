@@ -1,0 +1,97 @@
+.webinf{
+    width:100%;
+    min-height:100vh;
+}
+.webinf iframe{
+    width:100%;
+    min-height:120vh;
+    border: 0;
+}
+.learn-question{ 
+position:relative;
+ /* display: flex;  */
+ }
+.learn-question ul{
+    display: flex;
+    flex-direction: column;
+    width:700px;
+    min-height: 100vh;
+    list-style: none;
+position:absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.learn-question ul li{
+    width:600px;
+    min-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%);
+    border: 1px solid rgb(169, 167, 167);
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 30px 0;
+}
+.learn-question ul li .title{
+border-bottom: 1px solid black;
+font-size: 20px;
+font-weight: bold;
+display: flex;
+justify-content:space-between;
+}
+.learn-question ul li .person{
+    margin: 6px 12px;
+    display: flex;
+    width:100px;
+    align-items: center;
+}
+.learn-question ul li .person:hover{
+    cursor: pointer;
+}
+.learn-question ul li .person img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.learn-question ul li .person img:hover{
+    transform:scale(1.05)
+}
+.learn-question ul li .person .nicheng{
+    text-align: center;
+}
+.learn-question ul li .person .nicheng:hover{
+    color: #5b0eeb;
+    transform:translateY(-3px);
+}
+.learn-question ul li .foot{
+    display: flex;
+    justify-content:space-around;
+    padding:6px 12px;
+    align-items: center;
+    position: relative;
+}
+
+.learn-question ul li .foot img{
+    margin-top: 3px;
+    width:25px;
+    height:25px;
+    position:relative;
+    bottom:0;
+    border-radius: 50%;
+    padding:3px;
+}
+.learn-question ul li .foot span{
+    display: inline-block;
+    padding:0 5px 8px;
+    transform:translateY(-3px);
+}
+.learn-question ul li .foot img:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    background-color:rgb(85, 180, 232);
+}
+.learn-question ul li .foot img:active{
+    transform:scale(0.95);
+}

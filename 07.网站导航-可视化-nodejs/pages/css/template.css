@@ -1,0 +1,23 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background-color:#d1e6fa;
+    display: flex;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}

@@ -1,0 +1,180 @@
+html,
+body {
+  height: 100%;
+  background: #eee;
+}
+body {
+  overflow: hidden;
+}
+.scroll-animations-example > .scrollsection {
+  padding: 10vh 10vh 10vh 10vmax;
+  min-width: 550vh;
+}
+.scroll-animations-example > .scrollsection > .item {
+  display: inline-block;
+  position: relative;
+  margin: 0 -30vh 0 3vh;
+}
+.scroll-animations-example > .scrollsection > .item::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.scroll-animations-example > .scrollsection > .item.-big {
+  height: 80vh;
+  width: 60vh;
+}
+.scroll-animations-example > .scrollsection > .item.-big.-horizontal {
+  height: 60vh;
+  width: 80vh;
+}
+.scroll-animations-example > .scrollsection > .item.-normal {
+  height: 60vh;
+  width: 45vh;
+  z-index: 1;
+}
+.scroll-animations-example > .scrollsection > .item.-normal.-horizontal {
+  height: 45vh;
+  width: 60vh;
+}
+.scroll-animations-example > .scrollsection > .item.-normal:nth-of-type(3n) {
+  bottom: 5vh;
+}
+.scroll-animations-example > .scrollsection > .item.-normal:nth-of-type(4n) {
+  bottom: -5vh;
+}
+.scroll-animations-example > .scrollsection > .item.-small {
+  height: 40vh;
+  width: 30vh;
+  z-index: 2;
+}
+.scroll-animations-example > .scrollsection > .item.-small.-horizontal {
+  height: 30vh;
+  width: 40vh;
+}
+.scroll-animations-example > .scrollsection > .item.-small:nth-of-type(3n) {
+  bottom: 13vh;
+}
+.scroll-animations-example > .scrollsection > .item.-small:nth-of-type(4n) {
+  bottom: -13vh;
+}
+.scroll-animations-example > .scrollsection > .item > .image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(0) translateY(0) scale(1);
+  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n) > .image {
+  transform: translateX(-30vh) translateY(-30vh) scale(0.8);
+  transition-delay: 0;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 1) > .image {
+  transform: translateX(30vh) translateY(30vh) scale(0.8);
+  transition-delay: 0.05s;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 2) > .image {
+  transform: translateX(-30vh) translateY(30vh) scale(0.8);
+  transition-delay: 0.1s;
+}
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 3) > .image {
+  transform: translateX(-30vh) translateY(-30vh) scale(0.8);
+  transition-delay: 0.15s;
+}
+.scroll-animations-example > .scrollsection > .item > .image.-active {
+  transform: translateX(0) translateY(0) scale(1);
+  opacity: 0.8;
+  pointer-events: auto;
+  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+.scroll-animations-example > .scrollsection > .item > .image.-clicked {
+  transform: translateX(0) translateY(0) scale(5);
+  opacity: 0;
+  pointer-events: auto;
+  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+.scroll-animations-example > .scrollsection > .item > .image.-active:hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(0);
+  opacity: 1;
+  cursor: pointer;
+}
+.other-ui {
+  font-size: 15px;
+  text-align: center;
+  color: #eeeeee;
+}
+.other-ui > .logo {
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+  height: 32px;
+  width: 32px;
+  border: solid 2px #999;
+}
+
+.other-ui > .logo img{
+  width: 32px;
+  height: 32px;
+}
+
+.other-ui > .logo:hover {
+cursor: pointer;
+  border: solid 2px #3560e5;
+}
+
+.other-ui > .nav {
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+}
+.other-ui > .nav > .item {
+  text-align: center;
+  display: inline-block;
+  height: 25px;
+  width: 10vh;
+  margin-left: 2vh;
+}
+
+
+/* Grow-Shadow */
+.hvr-grow-shadow {
+  background: #999;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+
+  background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  cursor: pointer;
+}
+
+.other-ui > .footer {
+  position: fixed;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25px;
+  width: 300px;
+
+}

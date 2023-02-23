@@ -1,0 +1,145 @@
+.simple{
+    width:100%;
+    height:100%;
+    display:'';
+    padding-top:5px;
+}
+
+.simple-main{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.simple .card{
+    display:flex;
+    width:100px;
+    height:100px;
+    flex-direction: column;
+    margin: 25px 20px 5px 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem  #FFFFFF;
+    /* display: inline-block; */
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.simple .card:hover{
+/* transform:scale(1.2) */
+  transform: translateY(-8px);
+  background-color:#9bbdf3;
+}
+
+.simple .card img{
+    width: 60px;
+    height: 60px;
+}
+
+.simple .card span{
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.prepare{
+    /* text-align: center; */
+    width: 80%;
+    height: 100%;
+    margin: 30px 10% 20px 10%;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    /* box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem  #FFFFFF; */
+}
+
+.prepare .container {
+    padding: 5px 8% 5px 8%;
+    max-width: 600px;
+    position: relative;
+    /* box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem  #FFFFFF; */
+}
+
+.prepare .container .presave{
+    position: absolute;
+    padding:6px 9px;
+    top:5px;
+    right:5px;
+      box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem  #FFFFFF;
+      border-radius: 10px;
+}
+
+.prepare .container .presave:hover{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem  #FFFFFF;
+    color:#007aff;
+    cursor: pointer;
+}
+
+.prepare input{
+    border:0;
+    background:none;
+    outline:none;
+    border-bottom: 2px solid #000;
+    width:100%;
+padding:10px;
+height:30px;
+font-size: 18px;
+}
+
+.prepare h3{
+    /* padding:0; */
+    margin:10px 0;
+    font-size: 16px;
+}
+
+.prepare .task{
+    position: relative;
+    border-radius: 10px;
+    height:25px;
+    margin:8px 0;
+    padding:10px 45px 10px 60px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem  #FFFFFF;
+}
+
+.prepare .task:hover{
+    transition: all 0.3s ease;
+    transform: translateY(-5px);
+
+}
+
+.prepare .task .delete{
+    width:30px;
+    height:30px;
+    right:10px;
+    position:absolute;
+    border-radius: 10px;
+}
+
+.prepare .task .delete:hover{
+    background-color:rgb(221, 71, 109);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform:scale(1.2)
+
+}
+
+.prepare .task .check{
+    width:30px;
+    height:30px;
+    left:10px;
+    position:absolute;
+    cursor: pointer;
+}
+
+.prepare .task .check:hover{
+    background-color:rgb(142, 223, 142);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform:scale(1.2)
+}

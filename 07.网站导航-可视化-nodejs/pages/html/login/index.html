@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <!-- 该模板由星梦启航整理，部分素材可能源于网上，侵删，作者QQ2942581284 -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>星梦启航-登录注册页面</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+  </head> 
+  <body> 
+    
+    <div class="main">
+      <div class="container a-container" id="a-container">
+        <form class="form" id="b-form">
+          <h2 class="form_title title">登陆账号</h2>
+          <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Password</label>
+          </div>
+          <button class="form__button button submit" id="login-in">登录</button>
+        </form>
+      </div>
+      <div class="container b-container" id="b-container">
+       
+
+        <form class="form" id="a-form">
+          <h2 class="form_title title">注册账号</h2>
+          <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Password</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="email" required="">
+            <label>邮箱</label>
+          </div>
+          <button class="form__button button submit" id="login-up">注册</button>
+        </form>
+
+      </div>
+      <div class="switch" id="switch-cnt">
+        <div class="switch__circle"></div>
+        <div class="switch__circle switch__circle--t"></div>
+        <div class="switch__container" id="switch-c1">
+          <h2 class="switch__title title">Welcome Back !</h2>
+          <p class="switch__description description">不羁过往，纵情向前！</p>
+          <button class="switch__button button switch-btn">去注册</button>
+          <button class="button to-return">返回主页面</button>
+        </div>
+        <div class="switch__container is-hidden" id="switch-c2">
+          <h2 class="switch__title title">Hello Friend !</h2>
+          <p class="switch__description description">登陆账号,开始你的旅程！</p>
+          <button class="switch__button button switch-btn">去登录</button>
+          <button class="button to-return">返回主页面</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script  src="./script.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="./login.js"></script>
+</body>
+</html>
