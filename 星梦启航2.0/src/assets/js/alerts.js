@@ -19,8 +19,6 @@
                                         });
                                     }
 
-
-
     function PrimaryAlert(msg) {
         ShowTip(msg, 'primary','#cfe2ff','#9ec5fe','#0a58ca');
     }
