@@ -10,7 +10,7 @@
     </div>
 </div>
 <div id="change">
-    <div class='set' id="https://github.com/search?q=">
+    <div class='set' id="https://www.baidu.com/s?wd=">
         <img src="../assets/imgs/engines/baidu.png">
         <div>百度</div>
     </div>
@@ -196,6 +196,7 @@
                     window.$('#mask').hide()
                     window.$('#change').slideUp()
                 }),
+                // 点击搜索后
                 window.$('#to-search').click(function () {
                     if(!($('#search_input').val()==='')){
                         window.open($('#engine').attr('class')+$('#search_input').val());
@@ -204,6 +205,7 @@
                         window.$alerts.WarningAlert('！ 搜索内容不能为空~')
                     }
                 }),
+                // 切换引擎
                 $('.set').click(function () {
                         var $id=$(this).attr('id')
                         var $src=$(this).children('img').attr('src')
@@ -214,6 +216,7 @@
                         window.$('#mask').hide()
                         window.$('#change').slideUp()
                 })
+                // 监听回车键
                 window.$('#search_input').on('keyup',function(event){
                     if(event.keyCode=='13'){            
                         $(this).parent().children('#to-search').trigger('click')
