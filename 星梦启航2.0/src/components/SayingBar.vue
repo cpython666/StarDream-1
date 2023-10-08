@@ -17,6 +17,7 @@ export default {
                 }
             document.body.removeChild(input);
         },
+        
         loadSaying(){
             var _this = this
             window.$.get('./src/assets/json/sayingi.json',function(res){
